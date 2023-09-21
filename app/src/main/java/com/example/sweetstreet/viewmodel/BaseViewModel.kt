@@ -10,6 +10,7 @@ import com.example.sweetstreet.ui.UiState
 import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
 import com.google.maps.android.compose.CameraPositionState
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
@@ -78,7 +79,7 @@ class BaseViewModel: ViewModel() {
 
             }
 
-//            delay(2000) // to demonstrate loading screen
+            delay(2000) // to demonstrate loading screen
 
             _uiState.update {
                 it.copy(
