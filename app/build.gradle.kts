@@ -3,6 +3,8 @@ plugins {
     id("org.jetbrains.kotlin.android")
     // kotlin serialization plugin
     id("org.jetbrains.kotlin.plugin.serialization") version "1.8.10"
+    // gradle secrets
+    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 
 android {

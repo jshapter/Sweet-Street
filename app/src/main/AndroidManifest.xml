@@ -28,7 +28,9 @@
         </activity>
 
         <!-- google maps sdk API key removed!!! -->
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAdT8xHA0IzRAPUMgOUI39DUHw5n1ov6fo"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_KEY}" />
 
     </application>
 
