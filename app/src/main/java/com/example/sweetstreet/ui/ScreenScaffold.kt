@@ -38,6 +38,7 @@ import androidx.compose.ui.unit.sp
 import com.example.sweetstreet.SweetEvent
 import com.example.sweetstreet.ui.components.FilterDrawerSheet
 import com.example.sweetstreet.ui.views.ListView
+import com.example.sweetstreet.ui.views.MapView
 import com.example.sweetstreet.viewmodel.BaseViewModel
 import kotlinx.coroutines.launch
 
@@ -161,10 +162,10 @@ fun ScreenScaffold(viewModel: BaseViewModel) {
                         onEvent = onEvent
                     )
                 } else {
-//                    MapView(
-//                        uiState = viewModel.uiState,
-//                        onEvent = onEvent
-//                    )
+                    MapView(
+                        uiState = viewModel.uiState,
+                        onEvent = onEvent
+                    )
                 }
             }
         }
