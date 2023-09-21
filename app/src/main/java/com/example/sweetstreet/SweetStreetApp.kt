@@ -16,6 +16,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.sweetstreet.ui.ScreenScaffold
 import com.example.sweetstreet.ui.UiState
 import com.example.sweetstreet.viewmodel.BaseViewModel
 
@@ -46,6 +47,6 @@ fun SweetStreetApp(
             }
         }
     } else {
-        Text(text = "found vendors")
+        ScreenScaffold(viewModel = viewModel)
     }
 }
